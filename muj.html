@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Practice</title>
+        <meta charset="UTF-8">
+
+        <script>
+            function changeColor() {
+                document.getElementById("newColor").style.color="red";
+            }
+            function newLook() {
+                var sentence = document.getElementById("change");
+                sentence.style.fontFamily="Arial";
+                sentence.style.fontWeight="bold";
+            }
+            function picF() {
+                var pic = document.getElementById("picture");
+                pic.src = "./javascript-practice/F-Scan.jpg";
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p id="newColor">This paragraph starts out black and will change color when you click the button.</p>
+        <button onclick="changeColor()">Change Color</button>
+         
+        <p id="change">This paragraph start out in Times New Roman and will change to Arial and bold when you click on the button.</p>
+        <button onmouseover="newLook()">Change Font</button>
+
+        <p>Humans scan web pages in a F pattern to determine if they want to stay on the page or not. That's why most pages have the nav area across the top or down the left,
+            and the most important information appears near the upper left corner.
+        </p>
+        <img id="picture" src="./javascript-practice/page.PNG" alt="F Scan of Page" onmouseover="picF()">
+    </body>
+</html>

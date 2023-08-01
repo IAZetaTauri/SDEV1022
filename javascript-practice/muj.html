@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Practice</title>
+        <meta charset="UTF-8">
+
+        <script>
+            function changeColor() {
+                document.getElementById("newColor").style.color="red";
+            }
+            function newLook() {
+                var sentence = document.getElementById("change");
+                sentence.style.fontFamily="Arial";
+                sentence.style.fontWeight="bold";
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p id="newColor">This paragraph starts out black and will change color when you click the button.</p>
+        <button onclick="changeColor()">Change Color</button>
+         
+        <p id="change">This paragraph start out in Times New Roman and will change to Arial and bold when you click on the button.</p>
+        <button onmouseover="newLook()">Change Font</button>
+    </body>
+</html>
